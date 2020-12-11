@@ -38,6 +38,9 @@ require_once "init.php";
         .separator-x2{
             height: 60px;
         }
+        .separator-x5{
+            height: 300px;
+        }
         .block-padding{
             padding-left:45px;
             padding-right:45px;
@@ -48,6 +51,10 @@ require_once "init.php";
         }
         #home-block{
             background-image: url("<?= URL_BASE ?>images/home-block-background.png");
+            background-size: 100% 100%;
+        }
+        #about-block{
+            background-image: url("<?= URL_BASE ?>images/about-block-background.png");
             background-size: 100% 100%;
         }
         .blue-fieldset{
@@ -61,6 +68,27 @@ require_once "init.php";
             text-align: center;
             padding-left: 5%;
             padding-right: 5%;
+        }
+        .white-text{
+            font-size: 25px;
+            color: white;
+        }
+        .about-photo{
+            width: 430px;
+        }
+        #portfolio-block{
+            background-color: black;
+        }
+        .block-title{
+            color:white;
+            font-size: 45px;
+        }
+        .white-background{
+            background-color: white;
+        }
+        .mold{
+            min-height: 350px;
+            margin-top:50px;
         }
     </style>
 </head>
@@ -166,25 +194,60 @@ require_once "init.php";
             </div>
         </div>
     </div>
-    <hr>    
     <div id="about-block" class="block-padding page-block">
+        <div class="separator-x5"></div>        
         <div class="row">
             <div class="col-sm-12 col-md-4 col-lg-6 profile-photo center">
-                <img src="<?= URL_BASE ?>images/logo.png" alt="profile-photo">
+                <img src="<?= URL_BASE ?>images/logo_fundo_transparente_branco.png" class="about-photo" alt="profile-photo">
             </div>
-            <div class="col-sm-12 col-md-8 col-lg-6 block-padding">
+            <div class="col-sm-12 col-md-8 col-lg-6 block-padding white-text">
                 <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
             </div>
         </div>
     </div>
-    <hr>
     <div id="portfolio-block" class="block-padding">
+        <div class="separator-x2"></div>
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12 center">
-                <h3>Portfólio</h3>
+                <h3 class="block-title">Portfólio</h3>
             </div>
-        </div>        
+        </div>  
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="container white-background mold">                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="container white-background mold">                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="container white-background mold">                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="container white-background mold">                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="container white-background mold">                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="container white-background mold">                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="container white-background mold">                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="container white-background mold">                    
+                </div>
+            </div>
+        </div>      
     </div>
+    <div class="separator-x2"></div>
 </body>
 </html>
 <script src="<?= URL_BASE ?>/includes/jquery/jquery-3.5.1.min.js"></script>
